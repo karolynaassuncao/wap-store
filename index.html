@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>wap.store</title>
+  </head>
+
+  <body id="initial" class="initi" >
+    <main>
+
+      <div class="opacity active">
+        <div class="carrinho ">
+          <span onclick="fecharcarrinho()">></span>
+          <div class="content-carrinho-super">
+            <div>
+              <header class="header">
+                <img class="logo-carrinho" src="/img/logo-carrinho.svg" alt="logo">
+                <div><img class="logo-car" src="/img/shopping-cart.svg " alt="carrinho"><p>Meu carrinho (<strong class="pos-carrinho">0</strong>)</p></div>
+              </header>
+              <div class="container-carrinho"></div>
+            </div>
+
+            <div class="footer_carrinho">
+              <div class="title_carrinho">
+                <h6>RESUMO DO PEDIDO</h6>
+                <div>
+                  <label for="">TOTAL DO PEDIDO</label>
+                  <strong class ="sumPrice">R$ 0,00</strong>
+                </div>
+              </div>
+              <div class="buttons_carrinho">
+                <button>Finalizar Compra</button>
+                <button>Continuar Comprando</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="toogleMenu active">
+        <div class="content-left">
+          <header class="header-content-toogle-menu">
+            <div>
+              <img src="/img/mobile-logo-white.svg" alt="">
+            </div>
+            <img onclick="menuToogle()" src="/img/mobile-close-white.svg" alt="">
+          </header>
+
+          <div>
+            <img src="/img/mobile-user.svg" alt="">
+            <div>
+              <p>Seja bem-vindo!</p>
+              <p>Entre ou cadastre-se</p>
+            </div>
+          </div>
+
+          <ul>
+            <li>Mais pesquisados</li>
+            <li>Todos os produtos</li>
+            <li>Categorias</li>
+            <li>Ultimos lançamentos</li>
+            <li>Promoções</li>
+          </ul>
+
+        </div>
+      </div>
+
+      </div>
+      <header>
+        <!-- --- MENU ----------------------------- -->
+        <div class="logo">
+          <img src="/img/logo.svg" alt="logo-wap-store" />
+        </div>
+
+        <div class="search">
+          <input type="text" name="search-bar" id="" />
+          <a href="#"
+            ><img class="search-icon" src="/img/search-icon.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li class="hover-menu">
+              <a href="#">
+                <img src="/img/telephone.svg" alt="" />
+                <p>
+                  Atendimento
+                </p>
+              </a>
+
+              <!-- --- DROPDOWN ----------------------------- -->
+              <ul class="contact">
+                <div class="contact-menu">
+                  <div class="contacts"> 
+                    <img src="/img/dpd-telephone.svg" alt="">
+                    <div class="description-contact">
+                      <p>
+                            (xx) xxxxx-xxxx 
+                          </p>
+                          <p>
+                            Segunda a sexta, 8h às 18h
+                          </p>
+                        </div>
+                      </div>
+
+                  <div class="contacts"> 
+
+                    <img src="/img/dpd-whatsapp.svg" alt="">
+
+                      <div class="description-contact">
+                        <p>
+                          (xx) xxxxx-xxxx 
+                        </p>
+                        <p>
+                          Segunda a sexta, 8h às 18h
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+
+            </li>
+
+            <li class="user">
+              <img src="/img/user.svg" alt="" />
+              <div>
+                <p>Seja bem-vindo!</p>
+                <p><strong> Entre</strong> ou <strong>cadastre-se</strong></p>
+              </div>
+              
+              <!-- --- DROPDOWN ----------------------------- -->
+                <div class="login">
+                  <div class="login-container">
+                    <h3 class="login-title">Faça seu login</h3>
+
+                    <form class="form">
+                      <input type="text" class="form-input" placeholder="Seu e-mail">
+                      <input type="text" class="form-input" placeholder="Senha">
+                    </form>
+
+                    <div class="button-login">
+                      <button>ENTRAR</button>
+                    </div>
+
+                    <div class="footer-login">
+                      <p>Não possui uma conta? <a class="a-login" href="#">Registrar</a></p>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <div class="toogle searchfunction"  onclick="activeSearchInput()">
+              <img src="/img/search-icon.svg" alt=""/>
+            </div>
+            <li class="icons-carrinho" onclick="abrircarrinho()">
+              
+                <img src="/img/cart.svg" alt="" />
+              
+                <p>Meu carrinho</p>
+            </li>
+            <div class="toogle" onclick="menuToogle()">
+              <img src="/img/mobile-menu.svg" alt="" />
+            </div>
+          </ul>
+        </div>
+
+      </header>
+      
+      <!-- --- RESPONSIVE ----------------------------- -->
+
+      <div class="search responsive active">
+        <input type="text" name="search-bar" id="" />
+        <a href="#"
+          ><img class="search-icon" src="/img/search-icon.svg" alt=""
+        /></a>
+      </div>
+
+      <!-- --- NAV BAR ----------------------------- -->
+
+      <nav class="nav">
+        <ul class="bar">
+          <li><a href="#">Mais pesquisados</a></li>
+          <li><a href="#">Todos os produtos </a></li>
+          <li><a href="#">Categorias </a></li>
+          <li><a href="#">Últimos lançamentos </a></li>
+          <li><a href="#">Promoções </a></li>
+        </ul>
+      </nav>
+
+    <!-- --- CARDS ----------------------------- -->
+
+      <h1>Nossos principais produtos </h1>
+      <div class="container">
+        <div class="slide">
+        </div>
+      </div>
+    </main>
+
+    <!-- --- FOOTER ----------------------------- -->
+
+    <footer>
+      <img src="/img/logo-footer.svg" alt="" />
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+    <script src="js/menuToogle.js"></script>
+
+  </body>
+</html>
